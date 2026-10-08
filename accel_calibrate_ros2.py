@@ -510,8 +510,8 @@ def main():
                     help="fit type (default: axis)")
     ap.add_argument("--samples", type=int, default=None,
                     help="number of orientations (default: 6 for axis, 8 for ellipsoid)")
-    ap.add_argument("--sample-time", type=float, default=0.5,
-                    help="averaging window per position, seconds (default: 0.5)")
+    ap.add_argument("--sample-time", type=float, default=1.0,
+                    help="averaging window per position, seconds (default: 1.0)")
     ap.add_argument("--simulate", action="store_true",
                     help="run an offline self-test without ROS 2")
     args = ap.parse_args()
